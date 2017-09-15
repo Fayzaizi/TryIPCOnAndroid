@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ClientActivity"
+            android:process=":client" />
+
+        <service
+            android:name=".GreetingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.fayzaizi.tryipconandroid.GreetingService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
